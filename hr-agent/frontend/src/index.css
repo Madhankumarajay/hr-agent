@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f3f4f7; color: #172033; }
+.app { max-width: 760px; height: 100%; margin: 0 auto; display: flex; flex-direction: column; padding: 12px; gap: 10px; }
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+h1 { margin: 0; font-size: 20px; }
+small { color: #667085; }
+code { font-family: ui-monospace, Menlo, monospace; }
+.right { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.badge { font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #fff; border: 1px solid #e1e4ea; color: #667085; }
+.badge.busy { background: #fff3d6; border-color: #f2a100; color: #172033; }
+.b-collecting { background: #fff3d6; color: #172033; }
+.b-confirmed { background: #dff3e8; color: #1e8e5a; }
+.b-cancelled { background: #fbe6e6; color: #c23b3b; }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 8px; padding: 8px 14px; background: #172033; color: #fff; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+main { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding: 12px; background: #fff; border: 1px solid #e1e4ea; border-radius: 14px; }
+.empty { text-align: center; margin-top: 24px; color: #667085; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.hint { background: #fff; color: #172033; border: 1px solid #e1e4ea; max-width: 420px; text-align: left; }
+.hint:hover { border-color: #2f4bff; }
+.msg { max-width: 85%; padding: 10px 14px; border-radius: 14px; line-height: 1.45; }
+.msg p { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.msg.user { align-self: flex-end; background: #172033; color: #fff; border-bottom-right-radius: 4px; }
+.msg.assistant { align-self: flex-start; background: #f3f4f7; border-bottom-left-radius: 4px; }
+.typing { color: #667085; letter-spacing: 3px; }
+.cites { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.cites span { font: 11px ui-monospace, Menlo, monospace; background: #fff; border: 1px solid #e1e4ea; border-radius: 6px; padding: 2px 8px; color: #667085; }
+.via { display: block; margin-top: 6px; font-size: 11px; }
+.error { background: #fbe6e6; color: #c23b3b; border-radius: 10px; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.error button { background: #c23b3b; padding: 4px 10px; }
+form { display: flex; gap: 8px; }
+input { flex: 1; font: inherit; padding: 11px 14px; border: 1px solid #e1e4ea; border-radius: 10px; background: #fff; }
+button:focus-visible, input:focus-visible { outline: 2px solid #2f4bff; outline-offset: 2px; }

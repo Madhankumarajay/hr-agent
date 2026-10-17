@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+python-dotenv
+langgraph
+langchain-core
+langchain-groq
+langchain-text-splitters
+chromadb
+pypdf
+pytest
+httpx
